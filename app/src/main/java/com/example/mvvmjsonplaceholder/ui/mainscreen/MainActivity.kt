@@ -1,4 +1,4 @@
-package com.example.mvvmjsonplaceholder
+package com.example.mvvmjsonplaceholder.ui.mainscreen
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mvvmjsonplaceholder.R
 import com.example.mvvmjsonplaceholder.adapter.MainActivityAdapter
 import com.example.mvvmjsonplaceholder.base.ViewModelFactory
 import com.example.mvvmjsonplaceholder.viewmodel.MainActivityViewModel

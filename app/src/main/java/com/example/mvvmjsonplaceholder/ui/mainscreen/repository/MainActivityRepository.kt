@@ -1,8 +1,6 @@
 package com.example.mvvmjsonplaceholder.repository
 
-import com.example.mvvmjsonplaceholder.base.BaseRepository
 import com.example.mvvmjsonplaceholder.model.Post
-import com.example.mvvmjsonplaceholder.network.ApplicationClient
 import com.example.mvvmjsonplaceholder.network.PostApi
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -12,7 +10,7 @@ import retrofit2.Retrofit
 import javax.inject.Inject
 
 class MainActivityRepository @Inject
-constructor(private val retrofit: Retrofit): BaseRepository() {
+constructor(private val retrofit: Retrofit) {
 
     fun loadPostList(onSuccess: (List<Post>) -> Unit, onError: (Throwable) -> Unit) {
         val request = retrofit.create(PostApi::class.java).getPostList()
